@@ -1,0 +1,176 @@
+<div class="container mt-2">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a
+          href="#"
+          [routerLink]="['/dashboard']"
+          routerLinkActive="router-link-active"
+          >Inicio</a
+        >
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        Administración de tickets
+      </li>
+    </ol>
+  </nav>
+
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title"></h4>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table
+              id="basic-datatables"
+              class="display table table-striped table-hover"
+            >
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Folio</th>
+                  <th>Tipo</th>
+                  <th>Status</th>
+                  <th>Fecha</th>
+                  <th>Ultima respuesta</th>
+                  <th>Duración</th>
+                  <th>Acción</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <th>#</th>
+                  <th>Folio</th>
+                  <th>Tipo</th>
+                  <th>Status</th>
+                  <th>Fecha</th>
+                  <th>Ultima respuesta</th>
+                  <th>Duración</th>
+                  <th>Acción</th>
+                </tr>
+              </tfoot>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>COMPT77392</td>
+                  <td>sport 727</td>
+                  <td>
+                    <button class="btn btn-success">
+                      Aprobado
+                    </button>
+                  </td>
+                  <td>01-11-2020</td>
+                  <td>01-13-2020</td>
+                  <td>2 días</td>
+
+                  <td>
+                    <!-- Example split danger button -->
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-success">
+                        <i class="fas fa-search"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-success dropdown-toggle dropdown-toggle-split"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        <span class="sr-only">Opciones</span>
+                      </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action 1</a>
+                        <a class="dropdown-item" href="#">Action 2</a>
+                        <a class="dropdown-item" href="#">Action 3</a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>CXSWPT77392</td>
+                  <td>sport 727</td>
+                  <td>
+                    <button class="btn btn-warning">
+                      En espera
+                    </button>
+                  </td>
+                  <td>01-11-2020</td>
+                  <td>01-13-2020</td>
+                  <td>2 días</td>
+
+                  <td>
+                    <!-- Example split danger button -->
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-primary">
+                        <i class="fas fa-upload"></i>
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        <span class="sr-only">Opciones</span>
+                      </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action 1</a>
+                        <a class="dropdown-item" href="#">Action 2</a>
+                        <a class="dropdown-item" href="#">Action 3</a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>CFSTYT77392</td>
+                    <td>sport 727</td>
+                    <td>
+                      <button class="btn btn-danger">
+                        Cancelado
+                      </button>
+                    </td>
+                    <td>01-11-2020</td>
+                    <td>01-13-2020</td>
+                    <td>2 días</td>
+  
+                    <td>
+                      <!-- Example split danger button -->
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-primary">
+                          <i class="fas fa-upload"></i>
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          <span class="sr-only">Opciones</span>
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Action 1</a>
+                          <a class="dropdown-item" href="#">Action 2</a>
+                          <a class="dropdown-item" href="#">Action 3</a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function() {
+    $("#basic-datatables").DataTable();
+  });
+</script>

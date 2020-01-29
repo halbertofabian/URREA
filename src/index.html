@@ -5,9 +5,30 @@
   <title>TicketApp</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" href="assets/img/Logo_Urrea.png" type="image/x-icon"/>
+
+  <script src="../assets/js/plugin/webfont/webfont.min.js"></script>
+
+  
+  <script>
+		WebFont.load({
+			google: {"families":["Lato:300,400,700,900"]},
+			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls: ['../assets/css/fonts.min.css']},
+			active: function() {
+				sessionStorage.fonts = true;
+			}
+		});
+  </script> 
 </head>
 <body>
+
   <app-root></app-root>
+
+
+
+
+  
+
+ 
 </body>
 </html>
